@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  db_lab:
+    container_name: db_lab_pgsql
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=Mukhinkd1992
+      - POSTGRES_USER=homepredatordocker
+    image: postgres:14.4-alpine3.16
